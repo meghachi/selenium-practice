@@ -7,3 +7,4 @@ build
 bin
 test-output
 node_modules
+.idea/*
