@@ -88,7 +88,7 @@ public class ByHTMLAttributeTest {
         List<WebElement> textInputByClassNameList=driver.findElements(By.className("form-control"));
         assertThat(textInputByClassNameList.size()).isPositive();
         String actualVal=textInputByClassNameList.get(0).getAttribute("name");
-      assertThat(textInputByClassNameList.get(0).getAttribute("name")).isEqualTo("my-text");
+        assertThat(actualVal).isEqualTo(expectedVal);
         log.debug("The expected val is {} and the actual val is {}",expectedVal,actualVal);
     }
 
